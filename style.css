@@ -94,3 +94,30 @@ section div:last-child {
   border-width: 0.19rem;
   border-radius: 50%;
 }
+
+@keyframes blow {
+  0% {
+    height: 20vh;
+    width: 20vh;
+    transition-duration: 4s;
+    background-color: #45e8f9;
+  }
+  25% {
+    height: 45vh;
+    width: 45vh;
+    transition-duration: 1s;
+    background-color: #45e8f9;
+  }
+  50% {
+    height: 45vh;
+    width: 45vh;
+    transition-duration: 1s;
+    background-color: #45e8f9;
+  }
+  100% {
+    height: 20vh;
+    width: 20vh;
+    transition-duration: 6s;
+    background-color: #45e8f9;
+  }
+}

@@ -2,5 +2,5 @@ const box = document.getElementById("box")
 const button = document.getElementById("start-animation")
 
 button.addEventListener('click', () => {
-    alert('foi')
+	box.style.animation = "blow 12s infinite"
 })
