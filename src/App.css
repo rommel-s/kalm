@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainContainer {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+}
+
+.main {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: #fdfdfd;
+
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+button {
+  overflow: hidden;
+  outline: none;
+  background-color: #45e8f9;
   color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 1.3em;
+  cursor: pointer;
+  border: 0;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+section div:first-child {
+  position: absolute;
+}
+
+section div:nth-child(2) {
+  position: absolute;
+}
+
+section div:last-child {
+  position: absolute;
+}
+
+button,
+.box {
+  background-color: #45e8f9;
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.external-box {
+  height: 55vh;
+  width: 55vh;
+  border-color: #45e8f9;
+  border-style: dashed;
+  border-radius: 50%;
+}
+
+@keyframes blow {
+  0% {
+    height: 30vh;
+    width: 30vh;
+    transition-duration: 4s;
+    background-color: #45e8f9;
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    height: 56vh;
+    width: 56vh;
+    transition-duration: 1s;
+    background-color: #45e8f9;
   }
+  50% {
+    height: 56vh;
+    width: 56vh;
+    transition-duration: 1s;
+    background-color: #45e8f9;
+  }
+  100% {
+    height: 30vh;
+    width: 30vh;
+    transition-duration: 6s;
+    background-color: #45e8f9;
+  }
+}
+
+.start-animation {
+  animation: blow 12s 20;
+}
+
+@keyframes btn-content {
+  0% {
+    content: "Inspire";
+    transition-duration: 4s;
+    background-color: #45e8f9;
+  }
+  25% {
+    content: "Segure";
+    transition-duration: 1s;
+    background-color: #45e8f9;
+  }
+  50% {
+    content: "Segure";
+    transition-duration: 1s;
+    background-color: #45e8f9;
+  }
+  100% {
+    content: "solte";
+    transition-duration: 6s;
+    background-color: #45e8f9;
+  }
+}
+
+.btn-animation {
+  animation: btn-content 12s 20;
+}
+
+button::before {
+  content: "começar";
+  color: #fff;
 }

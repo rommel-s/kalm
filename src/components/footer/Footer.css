@@ -1,0 +1,27 @@
+.footer {
+  height: 40vh;
+  width: 100vw;
+  background-color: #fdfdfd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.instructions {
+  text-align: center;
+  font-family: "Sanchez", serif;
+  color: #0db3c5;
+  font-size: 1.2em;
+}
+
+.fade-in {
+  transition-timing-function: ease-in;
+  transition-duration: 5s;
+}
+
+.fade-out {
+  display: none;
+}

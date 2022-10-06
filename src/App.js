@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import "./App.css";
+import Footer from "./components/footer/Footer";
 
 function App() {
+  const [isActive, setActive] = useState("true");
+  const [toAnimate, setAnimation] = useState("true");
+
+  function startAnimation() {
+    setActive(!isActive);
+    setAnimation(!toAnimate);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mainContainer">
+      <div className="main">
+        <section>
+          <div
+            className={isActive ? "box" : "box start-animation"}
+            id="box"
+          ></div>
+          <div className="external-box"></div>
+          <button
+            className={toAnimate ? " " : "btn-animation"}
+            onClick={startAnimation}
+          ></button>
+        </section>
+      </div>
+
+      <Footer />
     </div>
   );
 }
