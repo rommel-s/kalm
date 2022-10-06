@@ -22,7 +22,7 @@ function App() {
           ></div>
           <div className="external-box"></div>
           <button
-            className={toAnimate ? " " : "btn-animation"}
+            className={toAnimate ? " " : "btn-animation "}
             onClick={startAnimation}
           ></button>
         </section>
