@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: #fdfdfd;
+
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+button {
+  overflow: hidden;
+  outline: none;
+  background-color: #45e8f9;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 1.3em;
+  cursor: pointer;
+  border: 0;
+  z-index: 1000;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section div:first-child {
+  position: absolute;
+}
+
+section div:nth-child(2) {
+  position: absolute;
+}
+
+section div:last-child {
+  position: absolute;
+}
+
+button,
+.box {
+  background-color: #45e8f9;
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.external-box {
+  height: 55vh;
+  width: 55vh;
+  border-color: #45e8f9;
+  border-style: dashed;
+  border-radius: 50%;
+}
+
+@keyframes blow {
+  0% {
+    height: 30vh;
+    width: 30vh;
+    transition-duration: 4s;
+    background-color: #45e8f9;
+  }
+  25% {
+    height: 56vh;
+    width: 56vh;
+    transition-duration: 1s;
+    background-color: #45e8f9;
+  }
+  50% {
+    height: 56vh;
+    width: 56vh;
+    transition-duration: 1s;
+    background-color: #45e8f9;
+  }
+  100% {
+    height: 30vh;
+    width: 30vh;
+    transition-duration: 5s;
+    background-color: #45e8f9;
+  }
+}
+
+.start-animation {
+  animation: blow 12s 20;
+}
+
+@keyframes btn-content {
+  0% {
+    color: #45e8f9;
+    transition-duration: 4s;
+    background-color: #45e8f9;
+  }
+  25% {
+    color: #45e8f9;
+    transition-duration: 1s;
+    background-color: #45e8f9;
+  }
+  50% {
+    color: #45e8f9;
+    transition-duration: 1s;
+    background-color: #45e8f9;
+  }
+  100% {
+    color: #45e8f9;
+    transition-duration: 6s;
+    background-color: #45e8f9;
+  }
+}
+
+.btn-animation {
+  animation: btn-content 12s 20;
+  color: #45e8f9;
+}
+
+button::before {
+  content: "Começar";
+  color: #fff;
+}
