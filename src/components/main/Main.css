@@ -80,12 +80,6 @@ button,
     transition-duration: 3s;
     background-color: #45e8f9;
   }
-  /* 25% {
-    height: 360px;
-    width: 360px;
-    transition-duration: 1s;
-    background-color: #45e8f9;
-  } */
   50% {
     height: 360px;
     width: 360px;
@@ -103,36 +97,3 @@ button,
 .start-animation {
   animation: blow 12s 20;
 }
-
-/* @keyframes btn-content {
-  0% {
-    color: #45e8f9;
-    transition-duration: 4s;
-    background-color: #45e8f9;
-  }
-  25% {
-    color: #45e8f9;
-    transition-duration: 1s;
-    background-color: #45e8f9;
-  }
-  50% {
-    color: #45e8f9;
-    transition-duration: 1s;
-    background-color: #45e8f9;
-  }
-  100% {
-    color: #45e8f9;
-    transition-duration: 6s;
-    background-color: #45e8f9;
-  }
-}
-
-.btn-animation {
-  animation: btn-content 12s 20;
-  color: #45e8f9;
-} */
-
-/* button::before {
-  content: "Começar";
-  color: #fff;
-} */
