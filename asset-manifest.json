@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/rommel-s/kalm/static/css/main.dcadce86.css",
+    "main.js": "/rommel-s/kalm/static/js/main.81e93f39.js",
+    "service-worker.js": "/rommel-s/kalm/service-worker.js",
+    "index.html": "/rommel-s/kalm/index.html",
+    "main.dcadce86.css.map": "/rommel-s/kalm/static/css/main.dcadce86.css.map",
+    "main.81e93f39.js.map": "/rommel-s/kalm/static/js/main.81e93f39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcadce86.css",
+    "static/js/main.81e93f39.js"
+  ]
+}
