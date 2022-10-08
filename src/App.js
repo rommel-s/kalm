@@ -6,10 +6,10 @@ import Main from "./components/main/Main";
 
 function App() {
   return (
-    <>
+    <div className='app'>
       <Main />
       <Footer />
-    </>
+    </div>
   );
 }
 
