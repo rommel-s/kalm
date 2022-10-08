@@ -132,7 +132,7 @@ button,
   color: #45e8f9;
 } */
 
-button::before {
+/* button::before {
   content: "Começar";
   color: #fff;
-}
+} */

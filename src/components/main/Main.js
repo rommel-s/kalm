@@ -4,10 +4,16 @@ import "./Main.css";
 export default function Main() {
   const [isActive, setActive] = useState("true");
   const [toAnimate, setAnimation] = useState("true");
+  const [buttonText, setButtonText] = useState("Começar");
 
   function startAnimation() {
     setActive(!isActive);
     setAnimation(!toAnimate);
+    changeButtonText();
+  }
+
+  function changeButtonText() {
+    setButtonText("");
   }
 
   return (
@@ -22,7 +28,9 @@ export default function Main() {
           <button
             className={toAnimate ? " " : "btn-animation "}
             onClick={startAnimation}
-          ></button>
+          >
+            {buttonText}
+          </button>
         </section>
       </div>
     </div>
